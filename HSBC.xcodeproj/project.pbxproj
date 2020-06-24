@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F5FABD624A203C600AC2CC2 /* CityCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5FABD524A203C600AC2CC2 /* CityCellViewModel.swift */; };
+		6F712C6424A0AA8E00BCFECB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F712C6324A0AA8E00BCFECB /* AppDelegate.swift */; };
+		6F712C6624A0AA8E00BCFECB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F712C6524A0AA8E00BCFECB /* SceneDelegate.swift */; };
+		6F712C6E24A0AA8E00BCFECB /* HSBC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F712C6C24A0AA8E00BCFECB /* HSBC.xcdatamodeld */; };
+		6F712C7024A0AA8F00BCFECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F712C6F24A0AA8F00BCFECB /* Assets.xcassets */; };
+		6F712C7324A0AA8F00BCFECB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F712C7124A0AA8F00BCFECB /* LaunchScreen.storyboard */; };
+		6F712C7E24A0AA8F00BCFECB /* HSBCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F712C7D24A0AA8F00BCFECB /* HSBCTests.swift */; };
+		6F712C8924A0AA8F00BCFECB /* HSBCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F712C8824A0AA8F00BCFECB /* HSBCUITests.swift */; };
+		6F712CA324A0AAB500BCFECB /* CityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F712C9924A0AAB500BCFECB /* CityCell.xib */; };
+		6F712CA424A0AAB500BCFECB /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F712C9A24A0AAB500BCFECB /* CityCell.swift */; };
+		6F712CA524A0AAB500BCFECB /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F712C9C24A0AAB500BCFECB /* EmptyTableViewCell.swift */; };
+		6F712CA624A0AAB500BCFECB /* EmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F712C9D24A0AAB500BCFECB /* EmptyTableViewCell.xib */; };
+		6F712CA724A0AAB500BCFECB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F712C9F24A0AAB500BCFECB /* MainViewController.swift */; };
+		6F712CB924A0AABB00BCFECB /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F712CAC24A0AABB00BCFECB /* LabelFactory.swift */; };
+		6F712CBB24A0AABB00BCFECB /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F712CAF24A0AABB00BCFECB /* Errors.swift */; };
+		6F712CBF24A0AABB00BCFECB /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F712CB424A0AABB00BCFECB /* WebService.swift */; };
+		6F712CC024A0AABB00BCFECB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F712CB524A0AABB00BCFECB /* API.swift */; };
+		6F712CC324A0AABB00BCFECB /* CityJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F712CB824A0AABB00BCFECB /* CityJSONParser.swift */; };
+		6F712CC524A0AAFD00BCFECB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F712CC424A0AAFD00BCFECB /* Main.storyboard */; };
+		6F712CD124A0DF6300BCFECB /* Geolocation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F712CCD24A0DF6300BCFECB /* Geolocation+CoreDataClass.swift */; };
+		6F712CD224A0DF6300BCFECB /* Geolocation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F712CCE24A0DF6300BCFECB /* Geolocation+CoreDataProperties.swift */; };
+		6FC89C0424A22BE900DCBFED /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC89C0324A22BE900DCBFED /* CityModel.swift */; };
+		6FC89C0624A22C5D00DCBFED /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC89C0524A22C5D00DCBFED /* MainViewModel.swift */; };
+		6FC89C0824A2405F00DCBFED /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC89C0724A2405F00DCBFED /* CityViewController.swift */; };
+		6FC89C0B24A2430C00DCBFED /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC89C0A24A2430C00DCBFED /* Coordinator.swift */; };
+		6FC89C0D24A2439200DCBFED /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC89C0C24A2439200DCBFED /* Storyboarded.swift */; };
+		6FC89C1024A243F900DCBFED /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC89C0F24A243F900DCBFED /* BaseViewController.swift */; };
+		6FD3327424A376440088300F /* VersionJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD3327324A376440088300F /* VersionJSONParser.swift */; };
+		6FD3327624A3924C0088300F /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD3327524A3924C0088300F /* UITableViewCell+Extension.swift */; };
+		6FE6258024A24BC200207181 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE6257F24A24BC200207181 /* LoadingViewController.swift */; };
+		6FE6258224A24F6300207181 /* CityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE6258124A24F6300207181 /* CityViewModel.swift */; };
+		6FE6258624A2538000207181 /* CityHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE6258424A2538000207181 /* CityHeaderCell.swift */; };
+		6FE6258724A2538000207181 /* CityHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FE6258524A2538000207181 /* CityHeaderCell.xib */; };
+		6FE6258E24A2651400207181 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE6258D24A2651400207181 /* MapViewController.swift */; };
+		6FE6259024A2653800207181 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE6258F24A2653800207181 /* MapViewModel.swift */; };
+		6FE6259424A2906100207181 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE6259224A2906100207181 /* DataManager.swift */; };
+		6FE6259524A2906100207181 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE6259324A2906100207181 /* CoreDataStack.swift */; };
+		6FE6259C24A292D400207181 /* City+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE6259A24A292D400207181 /* City+CoreDataClass.swift */; };
+		6FE6259D24A292D400207181 /* City+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE6259B24A292D400207181 /* City+CoreDataProperties.swift */; };
+		6FE625A024A36BAC00207181 /* DecodableStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE6259F24A36BAC00207181 /* DecodableStructures.swift */; };
+		6FE625A424A36CFB00207181 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE625A324A36CFB00207181 /* UserData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F712C7A24A0AA8F00BCFECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F712C5824A0AA8D00BCFECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F712C5F24A0AA8D00BCFECB;
+			remoteInfo = HSBC;
+		};
+		6F712C8524A0AA8F00BCFECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F712C5824A0AA8D00BCFECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F712C5F24A0AA8D00BCFECB;
+			remoteInfo = HSBC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F5FABD524A203C600AC2CC2 /* CityCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCellViewModel.swift; sourceTree = "<group>"; };
+		6F712C6024A0AA8D00BCFECB /* HSBC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HSBC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F712C6324A0AA8E00BCFECB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F712C6524A0AA8E00BCFECB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6F712C6D24A0AA8E00BCFECB /* HSBC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HSBC.xcdatamodel; sourceTree = "<group>"; };
+		6F712C6F24A0AA8F00BCFECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F712C7224A0AA8F00BCFECB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F712C7424A0AA8F00BCFECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F712C7924A0AA8F00BCFECB /* HSBCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSBCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F712C7D24A0AA8F00BCFECB /* HSBCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSBCTests.swift; sourceTree = "<group>"; };
+		6F712C7F24A0AA8F00BCFECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F712C8424A0AA8F00BCFECB /* HSBCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HSBCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F712C8824A0AA8F00BCFECB /* HSBCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSBCUITests.swift; sourceTree = "<group>"; };
+		6F712C8A24A0AA8F00BCFECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F712C9924A0AAB500BCFECB /* CityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityCell.xib; sourceTree = "<group>"; };
+		6F712C9A24A0AAB500BCFECB /* CityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		6F712C9C24A0AAB500BCFECB /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
+		6F712C9D24A0AAB500BCFECB /* EmptyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyTableViewCell.xib; sourceTree = "<group>"; };
+		6F712C9F24A0AAB500BCFECB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6F712CAC24A0AABB00BCFECB /* LabelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
+		6F712CAF24A0AABB00BCFECB /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		6F712CB424A0AABB00BCFECB /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		6F712CB524A0AABB00BCFECB /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		6F712CB824A0AABB00BCFECB /* CityJSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityJSONParser.swift; sourceTree = "<group>"; };
+		6F712CC424A0AAFD00BCFECB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		6F712CCD24A0DF6300BCFECB /* Geolocation+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Geolocation+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		6F712CCE24A0DF6300BCFECB /* Geolocation+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Geolocation+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		6FC89C0324A22BE900DCBFED /* CityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityModel.swift; path = HSBC/Helpers/CityModel.swift; sourceTree = SOURCE_ROOT; };
+		6FC89C0524A22C5D00DCBFED /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		6FC89C0724A2405F00DCBFED /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		6FC89C0A24A2430C00DCBFED /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		6FC89C0C24A2439200DCBFED /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		6FC89C0F24A243F900DCBFED /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		6FD3327324A376440088300F /* VersionJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionJSONParser.swift; sourceTree = "<group>"; };
+		6FD3327524A3924C0088300F /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		6FE6257F24A24BC200207181 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		6FE6258124A24F6300207181 /* CityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewModel.swift; sourceTree = "<group>"; };
+		6FE6258424A2538000207181 /* CityHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityHeaderCell.swift; sourceTree = "<group>"; };
+		6FE6258524A2538000207181 /* CityHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityHeaderCell.xib; sourceTree = "<group>"; };
+		6FE6258D24A2651400207181 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		6FE6258F24A2653800207181 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		6FE6259224A2906100207181 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		6FE6259324A2906100207181 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		6FE6259A24A292D400207181 /* City+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		6FE6259B24A292D400207181 /* City+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		6FE6259F24A36BAC00207181 /* DecodableStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableStructures.swift; sourceTree = "<group>"; };
+		6FE625A324A36CFB00207181 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F712C5D24A0AA8D00BCFECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F712C7624A0AA8F00BCFECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F712C8124A0AA8F00BCFECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F712C5724A0AA8D00BCFECB = {
+			isa = PBXGroup;
+			children = (
+				6F712C6224A0AA8D00BCFECB /* HSBC */,
+				6F712C7C24A0AA8F00BCFECB /* HSBCTests */,
+				6F712C8724A0AA8F00BCFECB /* HSBCUITests */,
+				6F712C6124A0AA8D00BCFECB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F712C6124A0AA8D00BCFECB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F712C6024A0AA8D00BCFECB /* HSBC.app */,
+				6F712C7924A0AA8F00BCFECB /* HSBCTests.xctest */,
+				6F712C8424A0AA8F00BCFECB /* HSBCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F712C6224A0AA8D00BCFECB /* HSBC */ = {
+			isa = PBXGroup;
+			children = (
+				6FC89C0E24A243DA00DCBFED /* BaseVC */,
+				6FE6259124A2906100207181 /* CoreData */,
+				6FC89C0924A242FA00DCBFED /* Flow */,
+				6F712C9624A0AAB500BCFECB /* MVVM */,
+				6F712CAB24A0AABB00BCFECB /* Helpers */,
+				6F712C6324A0AA8E00BCFECB /* AppDelegate.swift */,
+				6F712C6524A0AA8E00BCFECB /* SceneDelegate.swift */,
+				6F712CC424A0AAFD00BCFECB /* Main.storyboard */,
+				6F712C6F24A0AA8F00BCFECB /* Assets.xcassets */,
+				6F712C7124A0AA8F00BCFECB /* LaunchScreen.storyboard */,
+				6F712C7424A0AA8F00BCFECB /* Info.plist */,
+			);
+			path = HSBC;
+			sourceTree = "<group>";
+		};
+		6F712C7C24A0AA8F00BCFECB /* HSBCTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F712C7D24A0AA8F00BCFECB /* HSBCTests.swift */,
+				6F712C7F24A0AA8F00BCFECB /* Info.plist */,
+			);
+			path = HSBCTests;
+			sourceTree = "<group>";
+		};
+		6F712C8724A0AA8F00BCFECB /* HSBCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6F712C8824A0AA8F00BCFECB /* HSBCUITests.swift */,
+				6F712C8A24A0AA8F00BCFECB /* Info.plist */,
+			);
+			path = HSBCUITests;
+			sourceTree = "<group>";
+		};
+		6F712C9624A0AAB500BCFECB /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				6FC89C0124A22B2F00DCBFED /* Model */,
+				6FE6DF8224A2246000910618 /* ViewModels */,
+				6F712C9E24A0AAB500BCFECB /* ViewControllers */,
+				6F712C9724A0AAB500BCFECB /* Cells */,
+			);
+			name = MVVM;
+			path = ../../../AplikacjaMobilna/AplikacjaMobilna/MVVM;
+			sourceTree = "<group>";
+		};
+		6F712C9724A0AAB500BCFECB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6FE6258324A2536300207181 /* CityHeaderCell */,
+				6F712C9824A0AAB500BCFECB /* CityCell */,
+				6F712C9B24A0AAB500BCFECB /* EmptyCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6F712C9824A0AAB500BCFECB /* CityCell */ = {
+			isa = PBXGroup;
+			children = (
+				6F712C9924A0AAB500BCFECB /* CityCell.xib */,
+				6F712C9A24A0AAB500BCFECB /* CityCell.swift */,
+				6F5FABD524A203C600AC2CC2 /* CityCellViewModel.swift */,
+			);
+			path = CityCell;
+			sourceTree = "<group>";
+		};
+		6F712C9B24A0AAB500BCFECB /* EmptyCell */ = {
+			isa = PBXGroup;
+			children = (
+				6F712C9C24A0AAB500BCFECB /* EmptyTableViewCell.swift */,
+				6F712C9D24A0AAB500BCFECB /* EmptyTableViewCell.xib */,
+			);
+			path = EmptyCell;
+			sourceTree = "<group>";
+		};
+		6F712C9E24A0AAB500BCFECB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6F712C9F24A0AAB500BCFECB /* MainViewController.swift */,
+				6FC89C0724A2405F00DCBFED /* CityViewController.swift */,
+				6FE6258D24A2651400207181 /* MapViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6F712CAB24A0AABB00BCFECB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6FE6259E24A36B9100207181 /* JSONParsers */,
+				6F712CAD24A0AABB00BCFECB /* Enums */,
+				6F712CB424A0AABB00BCFECB /* WebService.swift */,
+				6F712CAC24A0AABB00BCFECB /* LabelFactory.swift */,
+				6F712CB524A0AABB00BCFECB /* API.swift */,
+				6FE625A324A36CFB00207181 /* UserData.swift */,
+				6FD3327524A3924C0088300F /* UITableViewCell+Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6F712CAD24A0AABB00BCFECB /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				6F712CAF24A0AABB00BCFECB /* Errors.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		6F712CB024A0AABB00BCFECB /* CoreDataSubclasses */ = {
+			isa = PBXGroup;
+			children = (
+				6FE6259A24A292D400207181 /* City+CoreDataClass.swift */,
+				6FE6259B24A292D400207181 /* City+CoreDataProperties.swift */,
+				6F712CCD24A0DF6300BCFECB /* Geolocation+CoreDataClass.swift */,
+				6F712CCE24A0DF6300BCFECB /* Geolocation+CoreDataProperties.swift */,
+			);
+			path = CoreDataSubclasses;
+			sourceTree = "<group>";
+		};
+		6FC89C0124A22B2F00DCBFED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6FC89C0324A22BE900DCBFED /* CityModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6FC89C0924A242FA00DCBFED /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				6FC89C0A24A2430C00DCBFED /* Coordinator.swift */,
+				6FC89C0C24A2439200DCBFED /* Storyboarded.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		6FC89C0E24A243DA00DCBFED /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				6FC89C0F24A243F900DCBFED /* BaseViewController.swift */,
+				6FE6257F24A24BC200207181 /* LoadingViewController.swift */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		6FE6258324A2536300207181 /* CityHeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				6FE6258424A2538000207181 /* CityHeaderCell.swift */,
+				6FE6258524A2538000207181 /* CityHeaderCell.xib */,
+			);
+			path = CityHeaderCell;
+			sourceTree = "<group>";
+		};
+		6FE6259124A2906100207181 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6F712CB024A0AABB00BCFECB /* CoreDataSubclasses */,
+				6FE6259224A2906100207181 /* DataManager.swift */,
+				6FE6259324A2906100207181 /* CoreDataStack.swift */,
+				6F712C6C24A0AA8E00BCFECB /* HSBC.xcdatamodeld */,
+			);
+			name = CoreData;
+			path = HSBC/CoreData;
+			sourceTree = SOURCE_ROOT;
+		};
+		6FE6259E24A36B9100207181 /* JSONParsers */ = {
+			isa = PBXGroup;
+			children = (
+				6F712CB824A0AABB00BCFECB /* CityJSONParser.swift */,
+				6FD3327324A376440088300F /* VersionJSONParser.swift */,
+				6FE6259F24A36BAC00207181 /* DecodableStructures.swift */,
+			);
+			path = JSONParsers;
+			sourceTree = "<group>";
+		};
+		6FE6DF8224A2246000910618 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6FC89C0524A22C5D00DCBFED /* MainViewModel.swift */,
+				6FE6258124A24F6300207181 /* CityViewModel.swift */,
+				6FE6258F24A2653800207181 /* MapViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F712C5F24A0AA8D00BCFECB /* HSBC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F712C8D24A0AA8F00BCFECB /* Build configuration list for PBXNativeTarget "HSBC" */;
+			buildPhases = (
+				6F712C5C24A0AA8D00BCFECB /* Sources */,
+				6F712C5D24A0AA8D00BCFECB /* Frameworks */,
+				6F712C5E24A0AA8D00BCFECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HSBC;
+			productName = HSBC;
+			productReference = 6F712C6024A0AA8D00BCFECB /* HSBC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F712C7824A0AA8F00BCFECB /* HSBCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F712C9024A0AA8F00BCFECB /* Build configuration list for PBXNativeTarget "HSBCTests" */;
+			buildPhases = (
+				6F712C7524A0AA8F00BCFECB /* Sources */,
+				6F712C7624A0AA8F00BCFECB /* Frameworks */,
+				6F712C7724A0AA8F00BCFECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F712C7B24A0AA8F00BCFECB /* PBXTargetDependency */,
+			);
+			name = HSBCTests;
+			productName = HSBCTests;
+			productReference = 6F712C7924A0AA8F00BCFECB /* HSBCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6F712C8324A0AA8F00BCFECB /* HSBCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F712C9324A0AA8F00BCFECB /* Build configuration list for PBXNativeTarget "HSBCUITests" */;
+			buildPhases = (
+				6F712C8024A0AA8F00BCFECB /* Sources */,
+				6F712C8124A0AA8F00BCFECB /* Frameworks */,
+				6F712C8224A0AA8F00BCFECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F712C8624A0AA8F00BCFECB /* PBXTargetDependency */,
+			);
+			name = HSBCUITests;
+			productName = HSBCUITests;
+			productReference = 6F712C8424A0AA8F00BCFECB /* HSBCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F712C5824A0AA8D00BCFECB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Michał Krupa";
+				TargetAttributes = {
+					6F712C5F24A0AA8D00BCFECB = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					6F712C7824A0AA8F00BCFECB = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 6F712C5F24A0AA8D00BCFECB;
+					};
+					6F712C8324A0AA8F00BCFECB = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 6F712C5F24A0AA8D00BCFECB;
+					};
+				};
+			};
+			buildConfigurationList = 6F712C5B24A0AA8D00BCFECB /* Build configuration list for PBXProject "HSBC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F712C5724A0AA8D00BCFECB;
+			productRefGroup = 6F712C6124A0AA8D00BCFECB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F712C5F24A0AA8D00BCFECB /* HSBC */,
+				6F712C7824A0AA8F00BCFECB /* HSBCTests */,
+				6F712C8324A0AA8F00BCFECB /* HSBCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F712C5E24A0AA8D00BCFECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F712C7324A0AA8F00BCFECB /* LaunchScreen.storyboard in Resources */,
+				6F712CC524A0AAFD00BCFECB /* Main.storyboard in Resources */,
+				6F712CA624A0AAB500BCFECB /* EmptyTableViewCell.xib in Resources */,
+				6F712C7024A0AA8F00BCFECB /* Assets.xcassets in Resources */,
+				6F712CA324A0AAB500BCFECB /* CityCell.xib in Resources */,
+				6FE6258724A2538000207181 /* CityHeaderCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F712C7724A0AA8F00BCFECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F712C8224A0AA8F00BCFECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F712C5C24A0AA8D00BCFECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F712CC324A0AABB00BCFECB /* CityJSONParser.swift in Sources */,
+				6FD3327424A376440088300F /* VersionJSONParser.swift in Sources */,
+				6FE6259424A2906100207181 /* DataManager.swift in Sources */,
+				6FE625A424A36CFB00207181 /* UserData.swift in Sources */,
+				6FC89C0424A22BE900DCBFED /* CityModel.swift in Sources */,
+				6F712CA724A0AAB500BCFECB /* MainViewController.swift in Sources */,
+				6FC89C1024A243F900DCBFED /* BaseViewController.swift in Sources */,
+				6F712CBF24A0AABB00BCFECB /* WebService.swift in Sources */,
+				6FE6258024A24BC200207181 /* LoadingViewController.swift in Sources */,
+				6FE6258624A2538000207181 /* CityHeaderCell.swift in Sources */,
+				6FE6259524A2906100207181 /* CoreDataStack.swift in Sources */,
+				6FE6259D24A292D400207181 /* City+CoreDataProperties.swift in Sources */,
+				6FC89C0B24A2430C00DCBFED /* Coordinator.swift in Sources */,
+				6F712CB924A0AABB00BCFECB /* LabelFactory.swift in Sources */,
+				6F712CD224A0DF6300BCFECB /* Geolocation+CoreDataProperties.swift in Sources */,
+				6F712C6E24A0AA8E00BCFECB /* HSBC.xcdatamodeld in Sources */,
+				6F712CD124A0DF6300BCFECB /* Geolocation+CoreDataClass.swift in Sources */,
+				6F712CBB24A0AABB00BCFECB /* Errors.swift in Sources */,
+				6FE6259024A2653800207181 /* MapViewModel.swift in Sources */,
+				6FE625A024A36BAC00207181 /* DecodableStructures.swift in Sources */,
+				6FC89C0D24A2439200DCBFED /* Storyboarded.swift in Sources */,
+				6F5FABD624A203C600AC2CC2 /* CityCellViewModel.swift in Sources */,
+				6F712C6424A0AA8E00BCFECB /* AppDelegate.swift in Sources */,
+				6FC89C0624A22C5D00DCBFED /* MainViewModel.swift in Sources */,
+				6F712C6624A0AA8E00BCFECB /* SceneDelegate.swift in Sources */,
+				6F712CA424A0AAB500BCFECB /* CityCell.swift in Sources */,
+				6FE6259C24A292D400207181 /* City+CoreDataClass.swift in Sources */,
+				6F712CC024A0AABB00BCFECB /* API.swift in Sources */,
+				6FD3327624A3924C0088300F /* UITableViewCell+Extension.swift in Sources */,
+				6FE6258224A24F6300207181 /* CityViewModel.swift in Sources */,
+				6F712CA524A0AAB500BCFECB /* EmptyTableViewCell.swift in Sources */,
+				6FC89C0824A2405F00DCBFED /* CityViewController.swift in Sources */,
+				6FE6258E24A2651400207181 /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F712C7524A0AA8F00BCFECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F712C7E24A0AA8F00BCFECB /* HSBCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F712C8024A0AA8F00BCFECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F712C8924A0AA8F00BCFECB /* HSBCUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F712C7B24A0AA8F00BCFECB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F712C5F24A0AA8D00BCFECB /* HSBC */;
+			targetProxy = 6F712C7A24A0AA8F00BCFECB /* PBXContainerItemProxy */;
+		};
+		6F712C8624A0AA8F00BCFECB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F712C5F24A0AA8D00BCFECB /* HSBC */;
+			targetProxy = 6F712C8524A0AA8F00BCFECB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F712C7124A0AA8F00BCFECB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F712C7224A0AA8F00BCFECB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F712C8B24A0AA8F00BCFECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F712C8C24A0AA8F00BCFECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F712C8E24A0AA8F00BCFECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8W8AY4TB7V;
+				INFOPLIST_FILE = HSBC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Bundle.HSBC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6F712C8F24A0AA8F00BCFECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8W8AY4TB7V;
+				INFOPLIST_FILE = HSBC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Bundle.HSBC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6F712C9124A0AA8F00BCFECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8W8AY4TB7V;
+				INFOPLIST_FILE = HSBCTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AplikacjeMobilne.HSBCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HSBC.app/HSBC";
+			};
+			name = Debug;
+		};
+		6F712C9224A0AA8F00BCFECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8W8AY4TB7V;
+				INFOPLIST_FILE = HSBCTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AplikacjeMobilne.HSBCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HSBC.app/HSBC";
+			};
+			name = Release;
+		};
+		6F712C9424A0AA8F00BCFECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8W8AY4TB7V;
+				INFOPLIST_FILE = HSBCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AplikacjeMobilne.HSBCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HSBC;
+			};
+			name = Debug;
+		};
+		6F712C9524A0AA8F00BCFECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8W8AY4TB7V;
+				INFOPLIST_FILE = HSBCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = AplikacjeMobilne.HSBCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HSBC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F712C5B24A0AA8D00BCFECB /* Build configuration list for PBXProject "HSBC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F712C8B24A0AA8F00BCFECB /* Debug */,
+				6F712C8C24A0AA8F00BCFECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F712C8D24A0AA8F00BCFECB /* Build configuration list for PBXNativeTarget "HSBC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F712C8E24A0AA8F00BCFECB /* Debug */,
+				6F712C8F24A0AA8F00BCFECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F712C9024A0AA8F00BCFECB /* Build configuration list for PBXNativeTarget "HSBCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F712C9124A0AA8F00BCFECB /* Debug */,
+				6F712C9224A0AA8F00BCFECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F712C9324A0AA8F00BCFECB /* Build configuration list for PBXNativeTarget "HSBCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F712C9424A0AA8F00BCFECB /* Debug */,
+				6F712C9524A0AA8F00BCFECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6F712C6C24A0AA8E00BCFECB /* HSBC.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6F712C6D24A0AA8E00BCFECB /* HSBC.xcdatamodel */,
+			);
+			currentVersion = 6F712C6D24A0AA8E00BCFECB /* HSBC.xcdatamodel */;
+			path = HSBC.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6F712C5824A0AA8D00BCFECB /* Project object */;
+}
